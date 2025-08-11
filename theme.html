@@ -1,0 +1,64 @@
+<html>
+<head>
+<style>
+
+element.style {
+}
+.theme-switcher-menu .button.action>.button-wrap {
+    text-transform: none;
+}
+.button.action .button-wrap {
+    text-transform: uppercase;
+    text-transform: var(--button-action-transform,uppercase);
+}
+.button.small, .button.small .button-wrap {
+    --button-height: 1.75rem;
+    --button-padding: 0.25rem;
+}
+.button-wrap {
+    align-items: center;
+    background-color: var(--button-bg);
+    border: 1px solid var(--button-border-color);
+    border-radius: var(--button-radius);
+    color: var(--button-color);
+    display: flex;
+    font: var(--button-font);
+    gap: 0.25rem;
+    height: var(--button-height);
+    justify-content: center;
+    padding-left: var(--button-padding);
+    padding-right: var(--button-padding);
+    position: relative;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+</style>
+</head>
+
+<body>
+
+<div class="theme-switcher-menu">
+
+<button type="button" class="button action has-icon theme-switcher-menu small" aria-haspopup="menu">
+
+<span class="button-wrap"><span class="icon icon-theme-os-default "></span>Theme
+
+</span>
+</button>
+
+
+
+<ul class="submenu themes-menu  inline-submenu-lg" aria-labelledby="themes-menu-button"><li class=" "><button type="button" class="button primary has-icon 
+          active-menu-item
+        "><span class="button-wrap"><span class="icon icon-theme-os-default "></span>OS Default</span></button></li><li class=" "><button type="button" class="button primary has-icon 
+          
+        "><span class="button-wrap"><span class="icon icon-theme-light "></span>Light</span></button></li><li class=" "><button type="button" class="button primary has-icon 
+          
+        "><span class="button-wrap"><span class="icon icon-theme-dark "></span>Dark</span></button></li></ul>
+
+</div>
+
+
+</body>
+</html>
